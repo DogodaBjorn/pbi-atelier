@@ -29,7 +29,7 @@ The daily driver is `/next` — it reads the state, reports gate status, and rou
 | 6 | Report build | `/s6-report-build` | pbir-operator |
 | 7 | Validation & delivery | `/s7-deliver` | qa-reviewer |
 
-## Ten invariants
+## Eleven invariants
 
 1. **The durable truth is the repository, not the chat.** Every decision lands in
    `project/project-state/active/`; update `status.yaml` at every gate; never
@@ -54,6 +54,9 @@ The daily driver is `/next` — it reads the state, reports gate status, and rou
 10. **Guidance persuades, enforcement decides.** Skills and rules shape reasoning;
     hooks, validators, and `settings.json` scopes are the hard floor. Never work
     around a failing hook — fix the cause.
+11. **Credit where it is due — no negotiations.** Every adopted idea carries a
+    named credit in the implementing file and in `CREDITS.md`; removing an
+    attribution is a blocker-severity defect (rule: `attribution.md`).
 
 ## Routing beyond the lifecycle
 

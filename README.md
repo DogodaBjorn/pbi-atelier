@@ -64,6 +64,15 @@ Full setup and a tour of the lifecycle: [GETTING-STARTED.md](GETTING-STARTED.md)
 - **One mutator.** Only the `pbir-operator` agent may touch `project/pbip/`,
   and it validates after every change.
 
+## Credits — non-negotiable
+
+This toolkit stands on the shared work of the Power BI design community —
+tool builders, practitioners, and authors. **Credit where it is due is a
+core principle here, enforced as a rule** (`.claude/rules/attribution.md`):
+every adopted idea is credited in the file that carries it and in
+[CREDITS.md](CREDITS.md), nothing is ever copied, and forks inherit the
+duty. Read CREDITS.md — the people in it are why this repo is any good.
+
 ## License
 
 The content of this repository is MIT-licensed — see [LICENSE](LICENSE).

@@ -48,3 +48,7 @@ never silently.
   before recommending (see DEPENDENCIES.md for the precedent).
 - Community sources live in the community tier of
   `contracts/source-register.yaml`; scout runs propose additions there.
+- **Credit is non-negotiable** (`.claude/rules/attribution.md`): anything
+  adopted lands with a named credit in its implementing file and in
+  `CREDITS.md`, in the same change. Log entries name every source
+  consulted, adopted or not.

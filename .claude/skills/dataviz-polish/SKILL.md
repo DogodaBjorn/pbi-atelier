@@ -8,7 +8,9 @@ description: The finishing pass that takes a correct report to premium - ten ran
 Polish is specified at stage 5 (the handoff names each move per visual) and
 executed at stage 6 — it is not freelance decoration at build time. Gate for
 every move: does it sharpen the 3-second message or deepen the 3-minute
-trust? If neither, it's ornament — skip it.
+trust? If neither, it's ornament — skip it. (The declutter/focus lineage
+here owes Tufte's data-ink principle and Knaflic's *Storytelling with
+Data*; micro-viz craft owes Kerry Kolosko — see CREDITS.md.)
 
 ## The ten moves, ranked by impact ÷ effort
 

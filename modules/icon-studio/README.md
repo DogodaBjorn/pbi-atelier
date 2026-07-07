@@ -43,3 +43,10 @@ Dynamic, data-driven graphics (KPI state chips, micro-gauges) use the
 **SVG-in-DAX** pattern in the guide — a measure builds the SVG string, the
 report renders it as an image. Powerful and easy to overdo; the guide's
 restraint rules apply.
+
+## Credit
+
+The SVG-in-DAX micro-viz discipline was pioneered and popularized in the
+Power BI community above all by [Kerry Kolosko](https://kerrykolosko.com/),
+whose sparkline and smart-graphics work defines the craft (consulted as
+inspiration; every recipe here is re-derived — see CREDITS.md).

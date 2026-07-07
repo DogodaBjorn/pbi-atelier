@@ -51,6 +51,11 @@ offer the radar's "assess" ring as candidates.
    owning module/skill/doc; hygiene sweep (no copied text, no client names,
    no absolute paths); bump `VERSION`; commit; tag when the user wants a
    release. Update the log entry's decision line and the radar.
+7. **Credit — non-negotiable** (`.claude/rules/attribution.md`): every
+   adopted idea gets a named credit in the implementing file **and** an
+   entry in `CREDITS.md`, in the same change — plus the source-register
+   addition from step 3. An adoption without its credits is incomplete,
+   exactly like a failing validator.
 
 ## Quality bar
 

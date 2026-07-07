@@ -22,7 +22,9 @@ Every page must pass both, and they pull in opposite directions — that tension
 1. **Hierarchy is the design.** One hero element per page earns its position;
    everything else supports it. If everything is big, nothing is.
 2. **Ink serves data.** Every pixel that isn't data must justify itself.
-   Declutter before decorating; remove before adding.
+   Declutter before decorating; remove before adding. (Edward Tufte's
+   data-ink principle, in our words; the declutter-and-focus discipline
+   owes Cole Nussbaumer Knaflic's *Storytelling with Data* — see CREDITS.md.)
 3. **Color is meaning, never mood.** The accent marks the story; gray carries
    the context; the good/bad pair keeps one meaning across the whole report —
    and never works alone (pair with sign, arrow, or label).

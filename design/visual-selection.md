@@ -2,7 +2,9 @@
 
 Choose the chart from the analytical intent, never from what "looks good" or
 what the previous page used. Ten intents cover report work; each visual on a
-page declares its intent in the page-purpose contract.
+page declares its intent in the page-purpose contract. (Intent-first chart
+selection descends from the Financial Times' *Visual Vocabulary* — see
+CREDITS.md; the table below is our Power BI-native re-derivation.)
 
 | # | Intent | The reader asks | First choice | Also valid | Avoid |
 |---|--------|-----------------|--------------|-----------|-------|

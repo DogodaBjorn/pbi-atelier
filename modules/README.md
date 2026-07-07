@@ -48,6 +48,9 @@ disabled module is a few skill-description lines.
    enablement check as step 1.
 3. Keep module knowledge in the module: lifecycle skills may *mention* a
    module (as s7 mentions nl-uat) but must degrade gracefully without it.
+4. **Credit your sources — non-negotiable** (`.claude/rules/attribution.md`):
+   the module README names the practitioners/tools whose work informed it,
+   and `CREDITS.md` gets their entry in the same change.
 
 ## Future module ideas
 
