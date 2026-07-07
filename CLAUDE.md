@@ -65,7 +65,8 @@ The daily driver is `/next` — it reads the state, reports gate status, and rou
 | Driving the `pbir` CLI / MS plugin | adapter skills `pbir-cli`, `ms-authoring` |
 | Full validation sweep | skill `validate-project` |
 | Build documentation | skill `build-log` |
-| Add-on modules (brand kit studio, custom visuals, NL deliverables) | `modules/README.md`; module skills are prefixed `bk-`, `cv-`, `nl-` |
+| Add-on modules (brand kit, custom visuals, NL, icons, nav, Deneb, tables, tooltips, canvas, a11y) | `modules/README.md`; module skills are prefixed `bk-`, `cv-`, `nl-`, `ic-`, `nv-`, `dn-`, `tb-`, `tt-`, `ca-`, `ax-` |
+| Keep the toolkit first-in-class (research any subject) | skill `scout` + `research/radar.md` |
 
 ## Environment notes
 

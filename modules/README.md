@@ -34,6 +34,11 @@ disabled module is a few skill-description lines.
 | [nl-deliverables](nl-deliverables/) | Dutch client deliverables: UAT/testplan and definitie-pagina content generated from the contracts |
 | [icon-studio](icon-studio/) | Custom SVG icons and visual additions: brand-colored icon sets with state variants, chrome graphics, dynamic SVG-in-DAX marks |
 | [nav-studio](nav-studio/) | Modern navigation/selection UI: button-slicer patterns (segmented controls, tabs, toggles, clickable KPI cards), nav bars, bookmark panels |
+| [deneb-studio](deneb-studio/) | Bespoke declarative visuals via Deneb/Vega-Lite: token-injected specs, the middle rung between native and pbiviz |
+| [table-studio](table-studio/) | Premium tables & matrices: typography doctrine, variance columns, in-cell micro-viz, density presets |
+| [tooltip-studio](tooltip-studio/) | The hover layer: report-page tooltips — mini-trends, definition/trust tooltips from metric contracts, mini-breakdowns |
+| [canvas-studio](canvas-studio/) | Wireframe-first layout and designed SVG page backgrounds in brand tokens |
+| [a11y-studio](a11y-studio/) | Accessibility as an auditable gate: scripted WCAG contrast checks, alt text, tab order, consistency |
 
 ## Writing a new module
 
@@ -46,9 +51,7 @@ disabled module is a few skill-description lines.
 
 ## Future module ideas
 
-- **backend-stories** — reverse-engineer a PBIP's DAX/M into backend user
-  stories, for teams moving report logic into ETL/SQL.
-- **fabric-deploy** — deployment-pipeline / Fabric CLI adapter with its own
-  safety hooks (deploys stay user-run).
-- **data-profiler** — source data-quality profiling that feeds stage 1's
-  data landscape with evidence instead of hearsay.
+Maintained on the living tech radar: see the **assess** ring in
+[../research/radar.md](../research/radar.md) (backend-stories,
+fabric-deploy, data-profiler, mobile layouts, and whatever the next
+`/scout` run surfaces).

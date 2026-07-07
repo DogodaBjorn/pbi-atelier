@@ -47,4 +47,32 @@ tier_3_craft:                    # informing, not binding — design judgment
     url: https://fluent2.microsoft.design/
     use_for: "spacing, type, and component conventions native to the platform"
 
+tier_4_community:                # practitioner blogs - inspiring, verify against Tier 1 before authoring
+  # Usage policy: consult and cite, never copy text/specs/assets; techniques
+  # are re-derived in this repo's own terms. Maintained by /scout runs.
+  - name: bibb.pro
+    url: https://bibb.pro/
+    use_for: "modern UI patterns (button slicer, navbars, layouts, themes)"
+  - name: Valerie Junk (PorcuBI)
+    url: https://www.valeriejunk.nl/
+    use_for: "tables/matrix craft, storytelling per audience, adoption"
+  - name: Kerry Kolosko
+    url: https://kerrykolosko.com/
+    use_for: "SVG/HTML micro-viz, sparklines, Deneb/SVG templates"
+  - name: Deneb guide & community
+    url: https://deneb.guide/
+    use_for: "Deneb/Vega-Lite capabilities, showcase, versioning"
+  - name: Data Pears (Mara Pereira)
+    url: https://www.datapears.com/
+    use_for: "design-tool-first backgrounds and layout workflow"
+  - name: Havens Consulting (Reid Havens)
+    url: https://www.havensconsulting.net/
+    use_for: "tooltip techniques, report design tricks"
+  - name: Data Savvy (Meagan Longoria)
+    url: https://datasavvy.me/
+    use_for: "Power BI accessibility practice"
+  - name: Data Goblins (Kurt Buhler)
+    url: https://data-goblins.com/
+    use_for: "Power BI design & agentic development practice"
+
 project_additions: []            # per-project sources appended at stage 0
