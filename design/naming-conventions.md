@@ -25,7 +25,8 @@ before opening its JSON:
 | `sl_` | Slicer | `sl_period`, `sl_region` |
 | `c_` | Callout / annotation text | `c_note_definition_change` |
 | `z_` | Page chrome (never data) | `z_masthead`, `z_nav`, `z_footer`, `z_bg_band` |
-| `btn_` | Button / navigation action | `btn_to_detail` |
+| `btn_` | Button / navigation action | `btn_to_detail`, `btn_back`, `btn_filters` |
+| `img_` | Image / icon placed as a standalone visual | `img_channel_mark` |
 
 Rules:
 
@@ -34,6 +35,8 @@ Rules:
   not `ch_bar1`) — chart types change, questions don't.
 - Never rename an existing visual when editing it; bookmarks, filters, and
   diffs depend on stable IDs.
+- Bookmarks: `bm_<page>_<state>` (e.g. `bm_p1_filters-open`) — the pair of
+  states a toggle switches between must both be named.
 
 ## Semantic model
 

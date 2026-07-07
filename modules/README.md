@@ -32,6 +32,8 @@ disabled module is a few skill-description lines.
 | [brand-kit-studio](brand-kit-studio/) | Interview-driven creation of brand kits (`design/brand-kits/<kit>/`) that compile into themes and hard-rule tokens |
 | [custom-visual-studio](custom-visual-studio/) | Scaffold and develop a `pbiviz` TypeScript custom visual when native visuals genuinely can't serve an intent |
 | [nl-deliverables](nl-deliverables/) | Dutch client deliverables: UAT/testplan and definitie-pagina content generated from the contracts |
+| [icon-studio](icon-studio/) | Custom SVG icons and visual additions: brand-colored icon sets with state variants, chrome graphics, dynamic SVG-in-DAX marks |
+| [nav-studio](nav-studio/) | Modern navigation/selection UI: button-slicer patterns (segmented controls, tabs, toggles, clickable KPI cards), nav bars, bookmark panels |
 
 ## Writing a new module
 
