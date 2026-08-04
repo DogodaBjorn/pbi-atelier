@@ -12,6 +12,9 @@ tier_1_authoritative:            # binding for file formats, APIs, product behav
   - name: PBIR / report definition JSON schemas
     url: https://github.com/microsoft/json-schemas
     use_for: "exact property names and enums — resolve from each file's $schema"
+  - name: Microsoft — skills-for-fabric (powerbi-authoring plugin)
+    url: https://github.com/microsoft/skills-for-fabric
+    use_for: "official agentic authoring skills, Power BI Modeling MCP, Desktop Bridge (ms-authoring adapter); volatile preview surface — re-verify capabilities at use time"
   - name: TMDL documentation
     url: https://learn.microsoft.com/analysis-services/tmdl/tmdl-overview
     use_for: "TMDL syntax and semantics"
@@ -74,5 +77,46 @@ tier_4_community:                # practitioner blogs - inspiring, verify agains
   - name: Data Goblins (Kurt Buhler)
     url: https://data-goblins.com/
     use_for: "Power BI design & agentic development practice"
+  - name: Siqi Chen — humanizer skill
+    url: https://github.com/DogodaBjorn/humanizer
+    use_for: "AI-writing-tell detection for user-visible copy (copy-polish)"
+  - name: Wikipedia — "Signs of AI writing" (WikiProject AI Cleanup)
+    url: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+    use_for: "the underlying AI-tell catalog the humanizer skill distills"
+  - name: Corey Haines — marketingskills
+    url: https://github.com/DogodaBjorn/marketingskills
+    use_for: "copy specificity and sweep-based copy editing (copy-polish)"
+  - name: Leonxlnx — taste-skill
+    url: https://github.com/DogodaBjorn/taste-skill
+    use_for: "UI consistency locks (color, shape, page-theme) in design-hard-rules"
+  - name: Yonathan Cohen (Tool Monsters) — handoff-skill
+    url: https://github.com/DogodaBjorn/handoff-skill
+    use_for: "verbatim-state session-handoff format (global handoff skill)"
+  - name: Next Level Builder — ui-ux-pro-max skill
+    url: https://github.com/DogodaBjorn/ui-ux-pro-max-skill
+    use_for: "design-intelligence search tooling and chart/color/typography/style data (design/intelligence, chart-selection.csv, _font-pairings.md)"
+  - name: Paul Bakaus — impeccable
+    url: https://github.com/DogodaBjorn/impeccable
+    use_for: "craft-floor Verify/Refuse discipline and states coverage (design/report-craft-floor.md)"
+  - name: Anthropic — skills repo, theme-factory + skill-creator
+    url: https://github.com/DogodaBjorn/skills_two
+    use_for: "starter theme palettes and the showcase-then-choose pattern (starter brand kits, bk-brand-kit no-brand path); description trigger-eval discipline (skill-forge)"
+  - name: Garry Tan — gstack
+    url: https://github.com/DogodaBjorn/gstack
+    use_for: "scored design review, triage and fix-queue patterns (design-critique); learnings/decisions JSONL memory pattern (scripts/learnings.py)"
+  - name: Jesse Vincent — superpowers
+    url: https://github.com/obra/superpowers
+    use_for: "gate-evidence discipline (lifecycle.md); TDD-for-skills authoring method (skill-forge)"
+
+first_party_internal:            # Bjorn's own repos backported into the template - provenance, not external knowledge
+  - name: hp-world-champs (design_handoff_powerbi bundle)
+    path: "E:/PowerBI Set-up/hp-world-champs"
+    use_for: "origin of the px-prototype pixel-perfect pipeline (MIT, own prior client work)"
+  - name: LinkedInContentOps
+    path: "E:/TrainerBjornOps/LinkedInContentOps"
+    use_for: "origin of the imagery-studio Gemini renderer and imagery-profile pattern (private first-party, no LICENSE file - adopted by ownership)"
+  - name: TrainerBjornOps — figma-infographic-design skill
+    path: "E:/TrainerBjornOps/.claude/skills/figma-infographic-design"
+    use_for: "origin of the fg-figma module's Figma working discipline (content-first, mechanism-mapping, screenshot-per-step, feedback-derived rules)"
 
 project_additions: []            # per-project sources appended at stage 0

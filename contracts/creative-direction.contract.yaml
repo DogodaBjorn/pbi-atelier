@@ -13,18 +13,37 @@ directions:
     visual_language: "<typography feel, color temperature, density, signature layout move>"
     signature_moment: "<the one element a reader would remember>"
     risk: "<what could make this direction fail its audience>"
+    design_read: "<one line: what the reader sees first, and why that works>"
+    dials:
+      density: "<compact | balanced | airy>"
+      variance: "<strict | expressive>"
+    comp: "<project/design-prototypes/<file>.html — px-prototype module only; omit without it>"
   - id: D2
     name: "<…>"
     concept: "<must differ in KIND from D1, not in degree>"
     visual_language: "<…>"
     signature_moment: "<…>"
     risk: "<…>"
+    design_read: "<…>"
+    dials:
+      density: "<…>"
+      variance: "<…>"
+    comp: "<…>"
   - id: D3
     name: "<…>"
     concept: "<…>"
     visual_language: "<…>"
     signature_moment: "<…>"
     risk: "<…>"
+    design_read: "<…>"
+    dials:
+      density: "<…>"
+      variance: "<…>"
+    comp: "<…>"
+
+design_intelligence:               # queried BEFORE any direction was drafted (s5 step 2)
+  queries: "<search.py runs: industry/context terms + domains>"
+  cited: "<the 1-3 findings used or overruled, each with the reason>"
 
 critique:
   method: "each direction argued against design/design-doctrine.md, per audience"

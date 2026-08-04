@@ -37,3 +37,21 @@ is active. A build that violates a hard rule fails the stage-6 gate.
 6. Forbidden: default Power BI styling left as-is, 3-D charts, pie charts for
    ranking, rainbow palettes, KPI-card wallpaper (a page that is only cards),
    gradients/glassmorphism, decorative images that carry no data.
+
+## Consistency locks
+
+Adapted from the Consistency Locks in Leonxlnx's taste-skill (MIT) — see
+CREDITS.md. Violating a lock fails the stage-6 gate like any hard rule.
+
+7. **One accent color per report.** The brand accent is the only accent hue,
+   used identically on every page — no second accent appearing on a later page.
+   Semantic state colors from the theme (the good/bad pair, neutral data) are
+   exempt: they encode meaning, not emphasis.
+8. **One corner-radius system.** A single radius token report-wide (default
+   8 px), or a documented 2-step scale (e.g. "cards 8 px, pills/buttons full") —
+   documented in the design handoff and applied everywhere. Ad-hoc mixed radii
+   are a gate failure.
+9. **One background treatment per page archetype.** All pages of the same
+   archetype share one background treatment, and within a page every card uses
+   the same style (fill, border, shadow, radius). Never mix card styles on a
+   page.

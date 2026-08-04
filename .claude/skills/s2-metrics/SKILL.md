@@ -27,6 +27,11 @@ not DAX, are where BI projects fail.
 5. Write `02-metrics.md`: the glossary table (id, name, one-line definition,
    direction, owner) + notes on every resolved ambiguity.
 6. Walk the user through the glossary and record their sign-off.
+7. **Log the signed decisions.** One entry per contract into the project
+   memory: `python scripts/learnings.py add --type decision --key <metric-id>
+   --insight "<one-line definition + why>" --source 02-metrics.md`. A later
+   definition change appends with `--supersedes <metric-id>` — signed
+   definitions are never silently re-litigated.
 
 ## Gate G2 checklist
 

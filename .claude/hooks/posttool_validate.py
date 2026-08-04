@@ -63,7 +63,50 @@ def main() -> int:
             "Fix the file before continuing; do not work around the validator.\n"
         )
         return 2
+
+    if mode == "json":
+        warn_taste_lint(path)
     return 0
+
+
+def report_root(path: str) -> str:
+    """Nearest ancestor .Report folder with a definition/report.json, or ''."""
+    current = os.path.dirname(os.path.abspath(path))
+    while True:
+        if current.endswith(".Report") and os.path.isfile(
+            os.path.join(current, "definition", "report.json")
+        ):
+            return current
+        parent = os.path.dirname(current)
+        if parent == current:
+            return ""
+        current = parent
+
+
+def warn_taste_lint(path: str) -> None:
+    """Run pbir_detect.py on the containing report — WARN-ONLY, never exit 2.
+
+    Deliberate asymmetry with the validators above: well-formedness failures
+    block (a broken file is never right), but taste-lint findings mid-build
+    are often just an incomplete page, so the hook only reports them. The
+    same detector is gate-blocking at G6/G7 via the validate-project skill,
+    where the waiver file (project/project-state/pbir-detect-waivers.yaml)
+    is the only sanctioned way past a finding.
+    """
+    root = report_root(path)
+    detector = os.path.join(REPO_ROOT, "scripts", "pbir_detect.py")
+    if not root or not os.path.isfile(detector):
+        return
+    result = subprocess.run(
+        [sys.executable, detector, root], capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        sys.stderr.write(
+            "pbi-atelier hook (warn-only): pbir_detect found taste-lint "
+            f"findings after writing {os.path.basename(path)}:\n"
+        )
+        sys.stderr.write(result.stdout)
+        sys.stderr.write(result.stderr)
 
 
 if __name__ == "__main__":

@@ -39,6 +39,9 @@ disabled module is a few skill-description lines.
 | [tooltip-studio](tooltip-studio/) | The hover layer: report-page tooltips — mini-trends, definition/trust tooltips from metric contracts, mini-breakdowns |
 | [canvas-studio](canvas-studio/) | Wireframe-first layout and designed SVG page backgrounds in brand tokens |
 | [a11y-studio](a11y-studio/) | Accessibility as an auditable gate: scripted WCAG contrast checks, alt text, tab order, consistency |
+| [imagery-studio](imagery-studio/) | On-brand generative imagery for report chrome: profile-driven Gemini renders anchored on real brand reference images — cover heroes, dividers, empty states, textures |
+| [px-prototype](px-prototype/) | Pixel-perfect builds from approved HTML comps: Playwright rect extraction, @2x reference screenshots, verbatim-rect PBIR within ±2px |
+| [fg-figma](fg-figma/) | Figma as an optional design surface: s5 direction pages for client review, mechanism-mapped showpiece explorations, and the pull-back path into px-prototype |
 
 ## Writing a new module
 

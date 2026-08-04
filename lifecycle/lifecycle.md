@@ -141,3 +141,18 @@ contract fidelity), delivery (user acceptance recorded).
 - Going **back** a stage is normal (a stage-5 insight may reopen stage 3);
   record the reason, set `current_stage` back, and mark the reopened stage
   `in_progress`. Never edit history to hide the loop.
+
+## Gate evidence
+
+A gate claim is only as true as the freshly-run command output quoted beside
+it — in the stage doc or BUILD_LOG. Output remembered from an earlier run,
+"should pass now", and an agent's own success report are worth nothing: if the
+command was not run in this session, run it again. Stage skills name their
+exact evidence; these floors always hold:
+
+| Claim | Counts only with |
+| --- | --- |
+| "model validates" | `python scripts/validate_tmdl.py --strict` output, zero errors |
+| "contrast passes" | `python scripts/check_contrast.py` output, every standard pair green |
+| "fidelity clean" | `python scripts/pbir_detect.py` output (waivers honored, zero unwaived findings) **plus**, with px-prototype enabled, the recorded ±2px check of built positions against `layout.json` and the reference-screenshot comparison; the fidelity-review record without them |
+| "subagent completed X" | a `git diff` or file check showing X on disk — a subagent's success report is a claim, not evidence |

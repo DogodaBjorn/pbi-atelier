@@ -10,6 +10,11 @@ order and makes gate status visible before anything happens.
 
 ## Procedure
 
+0. **Handoff intake** (session start, before routing). If
+   `project/deliverables/` holds `HANDOFF-*.md` files newer than
+   `project/project-state/status.yaml`: read the newest for context, then move
+   it to `project/project-state/archive/` (create the folder if missing). A
+   handoff informs the session; status.yaml stays the source of stage truth.
 1. Run `python scripts/check_state.py`. If it reports problems, fix the state
    first (usually: reconcile `status.yaml` with what actually exists on disk;
    `/project-init` repairs missing files). Never work on top of a broken state.
@@ -29,6 +34,9 @@ order and makes gate status visible before anything happens.
      `status: waived` with their reason in `gate_note`. Never silently skip.
 5. Going backward is allowed and normal: set `current_stage` back, mark the
    reopened stage `in_progress`, and note the reason in its stage file.
+6. **Footer.** End every `/next` response with exactly one line:
+   `Stage N of 7 — <gate status>. Next: <one concrete action doable in under
+   5 minutes>.`
 
 ## Never
 

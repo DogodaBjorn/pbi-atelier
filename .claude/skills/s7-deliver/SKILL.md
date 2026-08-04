@@ -32,7 +32,11 @@ Primary agent: `qa-reviewer`.
    never the agent), refresh configuration, open findings accepted by the
    user.
 7. **Retrospective (10 lines max):** what the next project should reuse or
-   avoid; improvements to port back to the template repo.
+   avoid; improvements to port back to the template repo. Append the durable
+   ones to the project memory — `python scripts/learnings.py add --type
+   pitfall|preference --key <slug> --insight "..." --source 07-delivery.md` —
+   then close with a full re-read (`python scripts/learnings.py search`) so
+   everything this client taught us is on the table at hand-over.
 8. Write `07-delivery.md`; record the user's acceptance.
 
 ## Gate G7 checklist — definition of done
