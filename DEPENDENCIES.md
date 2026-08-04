@@ -13,8 +13,13 @@ gracefully when a tool is absent.
 |---|---|---|---|
 | Python | ≥ 3.11 | `scripts/` validators, hooks' JSON parsing, and the vendored `design/intelligence/` search tooling. Stdlib only — no pip installs required. | PSF |
 | `pbir-cli` (PyPI) | `== 0.9.25` | Headless PBIR report authoring, driven via the `pbir-cli` adapter skill. | **Custom Non-Commercial — read below** |
-| Microsoft powerbi-authoring plugin | optional; record installed version here when adopted | Official agentic authoring surface (five skills + Power BI Modeling MCP, Node ≥ 18 + Desktop Bridge), via the `ms-authoring` adapter skill. Preferred execution/verification layer when installed: headless DAX checks at G7, rendered-screenshot evidence for fidelity review. | Microsoft terms (skills-for-fabric repo: MIT) |
+| Microsoft powerbi-authoring plugin | **installed 2026-08-04**: `powerbi-authoring@fabric-collection` v0.3.10, user scope (`claude plugin install powerbi-authoring@fabric-collection`); Modeling MCP auto-registered as `npx @microsoft/powerbi-modeling-mcp@latest`; reference clone at `E:\Claude Repositories\skills-for-fabric` @ `28f29ab` | Official agentic authoring surface (five skills + Power BI Modeling MCP, Node ≥ 18 + Desktop Bridge), via the `ms-authoring` adapter skill. Preferred execution/verification layer when installed: headless DAX checks at G7, rendered-screenshot evidence for fidelity review. | Microsoft terms (skills-for-fabric repo: MIT) |
 | Figma MCP + figma-use skill suite | optional; session-level | Client-review frames and design explorations, via the `fg-figma` module. Detected at use time; degrades to the HTML-comp path when absent. | Figma terms |
+
+Installed state on this machine (2026-08-04): `scripts/prototype` has `npm install`
+done with Chromium fetched (`npx playwright install chromium`); `GEMINI_CONFIG_PATH`
+is set user-wide to the existing key file at
+`E:\TrainerBjornOps\secrets\google-api-config.json` (key resolution smoke-tested).
 | Node.js + `pbiviz` | ≥ 20 / latest | Only if the `custom-visual-studio` module is enabled. Never commit `node_modules`. | MIT |
 | Node.js + Playwright | ≥ 18 / `playwright == 1.61.1` (pinned in `scripts/prototype/package.json`) | Optional — only if the `px-prototype` module is enabled. Run `npm install` once per machine inside `scripts/prototype/`; `node_modules` is never committed. | Apache-2.0 (Playwright) |
 | Google Gemini image API (`GEMINI_API_KEY`) | model `gemini-2.5-flash-image` | Optional — only if the `imagery-studio` module is enabled (`im-imagery` skill, `scripts/imagery/render_image.mjs`; Node ≥ 18, zero npm dependencies). Key resolves via `--config` JSON → `GEMINI_CONFIG_PATH` → `GEMINI_API_KEY`; with no key the renderer exits 2 and the skill degrades gracefully to canvas-studio chrome. See `modules/imagery-studio/README.md`. | Google API terms |
