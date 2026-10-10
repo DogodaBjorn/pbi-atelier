@@ -43,6 +43,7 @@ adopt a new idea into it, add its source here in the same change
 | **Edward Tufte** | The data-ink principle — "ink serves data" is his idea in our words. | design-doctrine |
 | **Cole Nussbaumer Knaflic** ([Storytelling with Data](https://www.storytellingwithdata.com/)) | Declutter-and-focus discipline; context in titles. | design-doctrine, dataviz-polish |
 | **Financial Times** ([Visual Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)) | Intent-first chart selection — the ancestor of our 10-intent table. | design/visual-selection.md |
+| **Alan Smith** (*How Charts Work*, FT Publishing 2022; via the BookCompiler canon CP-051 to CP-072) | Relationship-first chart choice beyond the familiar forms, scale and map honesty, writing the chart (finding titles, metadata subtitles, annotation). | .claude/skills/chart-grounding |
 | **IBCS** (Rolf Hichert et al.) | Notation consistency and variance-visualization rigor. | source register, table-studio |
 | **Nielsen Norman Group** | Evidence-based dashboard usability. | source register |
 | **W3C** ([WCAG 2.2](https://www.w3.org/TR/WCAG22/)) | The accessibility criteria our contrast script and audit implement. | a11y-studio, check_contrast.py |

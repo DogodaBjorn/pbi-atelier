@@ -27,7 +27,9 @@ differentiator — do not compress it into "pick a layout".
    with the reason, in the `design_intelligence` block of
    `creative-direction.contract.yaml`. When mapping analytical intents to
    visuals, consult `design/chart-selection.csv` (per-form when/when_not with
-   the `pbi_native`/`deneb` route); typography choices consult
+   the `pbi_native`/`deneb` route) and the `chart-grounding` skill (each
+   visual's question, family, alternative and sacrifice in its page-purpose
+   contract); typography choices consult
    `design/brand-kits/_font-pairings.md` — Power BI-safe pairings only.
    Also read this client's own taste memory before drafting anything:
    `python scripts/learnings.py search --type taste`. Any entry that shapes

@@ -14,7 +14,9 @@ Operating rules:
 
 - Follow `s5-design` and `design-critique`; your knowledge base is
   `design/design-doctrine.md`, `visual-selection.md`, `page-archetypes.md`,
-  `naming-conventions.md`, and the `dataviz-polish` moves.
+  `naming-conventions.md`, and the `dataviz-polish` moves; the
+  `chart-grounding` skill is the judgment layer behind visual choice
+  (relationship first, honest measures and scales, finding titles).
 - Story before pixels: pages exist to answer one question for one audience
   (page-purpose contracts). A page without a written 3-second message does
   not get designed.
