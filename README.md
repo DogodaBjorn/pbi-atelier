@@ -79,3 +79,6 @@ The content of this repository is MIT-licensed — see [LICENSE](LICENSE).
 External tools it drives (notably the `pbir` CLI) have their **own licenses,
 including non-commercial terms**; read [DEPENDENCIES.md](DEPENDENCIES.md) before
 using them in paid work.
+
+---
+Part of the workspace of Björn Kats (DoGoDa). Map, status of all repos and agent briefings: [DogodaBjorn/workspace](https://github.com/DogodaBjorn/workspace) (private) · public overview: [github.com/DogodaBjorn](https://github.com/DogodaBjorn).
